@@ -3,9 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Youtube Mobile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f2729cf986.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- header-->
+  <header>
+    <div class="logo">
+      <i class="fab fa-youtube"></i>
+      <span class="title">Youtube</span>
+    </div>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-ellipsis-v"></i>
+    </div>
+  </header>
+
+  <!-- video player-->
+  <section class="player">
+    <!-- Check more attributes of video tag on MDN website -->
+    <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"></video>
+  </section>
+
+  <!-- video Info-->
+  <section class="info">
+    <!--Metadata-->
+    <div class="metadata">
+      <ul class="hashtags">
+        <li>#Coding</li>
+        <li>#DreamCoders</li>
+        <li>#yeah</li>
+      </ul>
+      <div class="titleAndButton">
+        <span class="title">
+          A midnight coding session on the balcony in Chicago while listening to some chill beats. 
+          Variables, functions, loops and conditionals, let's go! Check out the song listing below.
+          ►SUBSCRIBE for more! http://bit.ly/CodePioneers
+          More Lofi Coding Mixes: http://bit.ly/LofiCodingMusic
+          Mixed by: Dion Lewis
+        </span>
+        <button class="moreBtn">
+          <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="views">
+        <span class="views">1M 1month ago</span>
+      </div>
+    </div>
+    <!--Actions-->
+    <ul class="actions">
+      <li><button>
+        <i class="fas fa-thumbs-up"></i><span>1K</span>
+      </button></li>
+      <li><button>
+        <i class="fas fa-thumbs-down"><span>0</span></i>
+      </button></li>
+      <li><button>
+        <i class="fas fa-share"></i><span>Share</span>
+      </button></li>
+      <li><button>
+        <i class="fas fa-plus"><span>Save</span></i>
+      </button></li>
+      <li><button>
+        <i class="fas fa-flag"></i><span>Report</span>
+      </button></li>
+    </ul>
+    <!-- Channel Description-->
+    <div class="channel">
+      <div class="metadata">
+        <img src="image/권혁진 사진.jpeg" alt="">
+        <div class="info">
+          <span class="name">드링코더</span>
+          <span class="subscribers">1M Subscribers</span></div>
+      </div>
+      <button class="subscribe">subscribe</button>
+    </div>
+  </section>
+  <section class="upNext">
+    <span class="title">Up next</span>
+    <ul>
+      <li class="item">
+      <img src="image/1.jpg" alt="">
+      <div class="info">
+        <span class="title">프론트엔드 강의, 프론트엔드 개발자가 되고싶다면? | 
+          웹개발 입문자편 강의를 시작합니다.: HTML, CSS, Javascript
+        </span>
+        <span class="name">혁진이의 드림코딩</span>
+        <span class="views">82K views</span>
+      </div>
+      <button class="moreBtn">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+    </li>
+      <li class="item">
+        <img src="image/2.jpg" alt="">
+      <div class="info">
+        <span class="title">HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 | 
+          프론트엔드 개발자 입문편: HTML, CSS, Javascript
+        </span>
+        <span class="name">혁진이의 드림코딩</span>
+        <span class="views">82K views</span>
+      </div>
+      <button class="moreBtn">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+      </li>
+      <li class="item">
+        <img src="image/3.jpg" alt="">
+      <div class="info">
+        <span class="title">HTML 태그 완성, 웹포트폴리오 만들기전에 꼭 보세요 | 
+          프론트엔드 개발자 입문편: HTML, CSS, Javascript
+        </span>
+        <span class="name">혁진이의 드림코딩</span>
+        <span class="views">84K views</span>
+      </div>
+      <button class="moreBtn">
+        <i class="fas fa-ellipsis-v"></i>
+      </button>
+      </li>
+    </ul>
+  </section>
   
 </body>
 </html>
