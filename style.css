@@ -50,6 +50,21 @@ header .icons .fa-search {
   margin-right: var(--padding);
 }
 
+/* Video Player */
 .player {
-  background-color: black;
+  /* 플레이어를 위에 고정 시키고 싶을때 (스크롤을 내려도) */
+  position: sticky;
+  /* 위에 포지션 스티키만 쓰면 고정이 안된다, 어디에 고정할지 정해줘야함 */
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  /* width, height을 100%로 하면 화면창에 가득찬다 */
+  width: 100%;
+  height: 100%;
+  /* 그치만 위에서 멈추면 플레이어가 창을 계속 뒤덮는다
+  그래서 max-width로 제한 값을 설정*/
+  max-width: 1000px;
 }
