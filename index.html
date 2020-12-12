@@ -6,9 +6,10 @@
   <title>Youtube Mobile</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/f2729cf986.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
 </head>
 <body>
-  <!-- header-->
+  <!-- Header-->
   <header>
     <div class="logo">
       <i class="fab fa-youtube"></i>
@@ -20,108 +21,122 @@
     </div>
   </header>
 
-  <!-- video player-->
+  <!-- Video Player-->
   <section class="player">
     <!-- Check more attributes of video tag on MDN website -->
     <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"></video>
   </section>
 
-  <!-- video Info-->
-  <section class="info">
-    <!--Metadata-->
-    <div class="metadata">
-      <ul class="hashtags">
-        <li>#Coding</li>
-        <li>#DreamCoders</li>
-        <li>#yeah</li>
-      </ul>
-      <div class="titleAndButton">
-        <span class="title">
-          A midnight coding session on the balcony in Chicago while listening to some chill beats. 
-          Variables, functions, loops and conditionals, let's go! Check out the song listing below.
-          ►SUBSCRIBE for more! http://bit.ly/CodePioneers
-          More Lofi Coding Mixes: http://bit.ly/LofiCodingMusic
-          Mixed by: Dion Lewis
-        </span>
-        <button class="moreBtn">
-          <i class="fas fa-caret-down"></i>
-        </button>
-      </div>
-      <span class="views">1M 1month ago</span>
-    </div>
-    <!--Actions-->
-    <ul class="actions">
-      <li><button>
-        <i class="fas fa-thumbs-up"></i><span>1K</span>
-      </button></li>
-      <li><button>
-        <i class="fas fa-thumbs-down"><span>0</span></i>
-      </button></li>
-      <li><button>
-        <i class="fas fa-share"></i><span>Share</span>
-      </button></li>
-      <li><button>
-        <i class="fas fa-plus"><span>Save</span></i>
-      </button></li>
-      <li><button>
-        <i class="fas fa-flag"></i><span>Report</span>
-      </button></li>
-    </ul>
-    <!-- Channel Description-->
-    <div class="channel">
+  <div class="infoAndUpNext">
+    
+    <!-- Video Info-->
+    <section class="info">
+      <!--Metadata-->
       <div class="metadata">
-        <img src="image/권혁진 사진.jpeg" alt="">
+        <ul class="hashtags">
+          <li>#Coding</li>
+          <li>#DreamCoders</li>
+          <li>#yeah</li>
+        </ul>
+        <div class="titleAndButton">
+          <span class="title clamp">
+            A midnight coding session on the balcony in Chicago while listening to some chill beats. 
+            Variables, functions, loops and conditionals, let's go! Check out the song listing below.
+            ►SUBSCRIBE for more! http://bit.ly/CodePioneers
+            More Lofi Coding Mixes: http://bit.ly/LofiCodingMusic
+            Mixed by: Dion Lewis
+          </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <span class="views">1M 1month ago</span>
+      </div>
+      <!--Actions-->
+      <ul class="actions">
+        <li><button>
+          <i class="active fas fa-thumbs-up"></i><span>1K</span>
+        </button></li>
+        <li><button>
+          <i class="fas fa-thumbs-down"></i><span>0</span>
+        </button></li>
+        <li><button>
+          <i class="fas fa-share"></i><span>Share</span>
+        </button></li>
+        <li><button>
+          <i class="fas fa-plus"><span>Save</span></i>
+        </button></li>
+        <li><button>
+          <i class="fas fa-flag"></i><span>Report</span>
+        </button></li>
+      </ul>
+      <!-- Channel Description-->
+      <div class="channel">
+        <div class="metadata">
+          <img src="image/권혁진 사진.jpeg" alt="">
+          <div class="info">
+            <span class="name">Gwonglish</span>
+            <span class="subscribers">1M Subscribers</span></div>
+        </div>
+        <button class="subscribe">subscribe</button>
+      </div>
+    </section>
+  
+    <!-- Up Next -->-->
+    <section class="upNext">
+      <span class="title">Up next</span>
+      <ul>
+        <li class="item">
+          <div class="img">
+            <img src="image/1.jpg" alt="">
+          </div>
+          <div class="info">
+            <span class="title">LONDON VLOG, Christmas, 런던 브이로그 | 
+              그리운 런던 여행 다시 가고 싶다: 언제쯤 다시 갈 수 있을까
+            </span>
+            <span class="name">Gwonglish</span>
+            <span class="views">82K views</span>
+          </div>
+          <button class="moreBtn">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+      </li>
+        <li class="item">
+          <div class="img">
+            <img src="image/2.jpg" alt="">
+          </div>
         <div class="info">
-          <span class="name">드링코더</span>
-          <span class="subscribers">1M Subscribers</span></div>
-      </div>
-      <button class="subscribe">subscribe</button>
-    </div>
-  </section>
-  <section class="upNext">
-    <span class="title">Up next</span>
-    <ul>
-      <li class="item">
-      <img src="image/1.jpg" alt="">
-      <div class="info">
-        <span class="title">프론트엔드 강의, 프론트엔드 개발자가 되고싶다면? | 
-          웹개발 입문자편 강의를 시작합니다.: HTML, CSS, Javascript
-        </span>
-        <span class="name">혁진이의 드림코딩</span>
-        <span class="views">82K views</span>
-      </div>
-      <button class="moreBtn">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-    </li>
-      <li class="item">
-        <img src="image/2.jpg" alt="">
-      <div class="info">
-        <span class="title">HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 | 
-          프론트엔드 개발자 입문편: HTML, CSS, Javascript
-        </span>
-        <span class="name">혁진이의 드림코딩</span>
-        <span class="views">82K views</span>
-      </div>
-      <button class="moreBtn">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-      </li>
-      <li class="item">
-        <img src="image/3.jpg" alt="">
-      <div class="info">
-        <span class="title">프론트엔드 강의, 프론트엔드 개발자가 되고싶다면? | 
-          웹개발 입문자편 강의를 시작합니다.: HTML, CSS, Javascript
-        </span>
-        <span class="name">혁진이의 드림코딩</span>
-        <span class="views">82K views</span>
-      </div>
-      <button class="moreBtn">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-      </li>
-    </ul>
-  </section>
+          <span class="title">크리스마스 in Lisbon, 벌써 1년전이네 시간 빠르다 | 
+            크리스마스는 역시 유럽이 이쁜듯, 벌써 1년이 후딱 지났다.
+          </span>
+          <span class="name">Gwonglish</span>
+          <span class="views">44K views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+        </li>
+        <li class="item">
+          <div class="img">
+            <img src="image/3.jpg" alt="">
+          </div>
+        <div class="info">
+          <span class="title">리스본 떠나기 전날, 안그리울줄 알았는데 그립네 | 
+            다시 돌아가라고 한다면 돌아갈꺼야?: 아마도 안돌아갈꺼 같다. 
+          </span>
+          <span class="name">Gwonglish</span>
+          <span class="views">100K views</span>
+        </div>
+        <button class="moreBtn">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+        </li>
+      </ul>
+    </section>
+    
+    
+  </div>
+
   
 </body>
 </html>
